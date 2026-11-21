@@ -10,9 +10,9 @@ interface FooterProps {
 export const Footer: React.FC<FooterProps> = ({ onNavigate, onOpenDeploymentLock }) => {
   return (
     <footer className="relative bg-obsidian-subtle dark:bg-obsidian-subtle bg-zinc-50 border-t border-obsidian-border dark:border-obsidian-border border-paper-border text-zinc-400 dark:text-zinc-400 text-zinc-600 transition-colors">
-      <div className="corner-mark corner-mark-tl"></div>
-      <div className="corner-mark corner-mark-tr"></div>
-      <div className="max-w-[1720px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16 py-14 sm:py-16">
+      <span className="absolute -top-1.5 -left-1.5 font-mono text-xs text-brand select-none leading-none pointer-events-none">+</span>
+      <span className="absolute -top-1.5 -right-1.5 font-mono text-xs text-brand select-none leading-none pointer-events-none">+</span>
+      <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12 py-14 sm:py-16">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 lg:gap-12 pb-12 border-b border-zinc-800 dark:border-zinc-800 border-zinc-200">
           {/* Identity & Colophon (5 cols) */}
           <div className="md:col-span-5">

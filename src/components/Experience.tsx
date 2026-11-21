@@ -81,18 +81,20 @@ export const Experience: React.FC = () => {
 
   return (
     <section id="experience" className="py-20 sm:py-28 border-b border-obsidian-border dark:border-obsidian-border border-paper-border relative">
-      <div className="max-w-[1720px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16">
-        {/* Section Header with Corner Guides */}
-        <div className="relative pb-8 border-b border-zinc-800 dark:border-zinc-800 border-zinc-200">
-          <div className="corner-mark corner-mark-tl"></div>
-          <div className="corner-mark corner-mark-tr"></div>
+      <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12 relative">
+        {/* Section Header with Precision Corner Crosshairs */}
+        <div className="relative border border-zinc-800/80 dark:border-zinc-800/80 border-zinc-200/80 bg-obsidian-subtle/60 dark:bg-obsidian-subtle/60 bg-zinc-50/60 p-4 sm:p-6 mb-12">
+          <span className="absolute -top-1.5 -left-1.5 font-mono text-xs text-brand select-none leading-none pointer-events-none">+</span>
+          <span className="absolute -top-1.5 -right-1.5 font-mono text-xs text-brand select-none leading-none pointer-events-none">+</span>
+          <span className="absolute -bottom-1.5 -left-1.5 font-mono text-xs text-brand select-none leading-none pointer-events-none">+</span>
+          <span className="absolute -bottom-1.5 -right-1.5 font-mono text-xs text-brand select-none leading-none pointer-events-none">+</span>
 
           <div className="flex items-center gap-2 font-mono text-xs text-zinc-400 dark:text-zinc-400 text-zinc-600 mb-2">
             <span className="text-brand font-bold tracking-wider">SEC.02</span>
             <span className="text-zinc-700 dark:text-zinc-700 text-zinc-300">/</span>
             <span>VERIFIED PROFESSIONAL JOURNEY</span>
           </div>
-          <h2 className="text-3xl sm:text-5xl font-extrabold tracking-tightest uppercase text-zinc-100 dark:text-zinc-100 text-zinc-900">
+          <h2 className="text-2xl sm:text-4xl font-extrabold tracking-tightest uppercase text-zinc-100 dark:text-zinc-100 text-zinc-900">
             Engineering Roles
           </h2>
           <p className="mt-2 text-sm text-zinc-400 dark:text-zinc-400 text-zinc-600 max-w-2xl font-mono">

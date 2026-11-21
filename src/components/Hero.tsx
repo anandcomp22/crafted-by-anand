@@ -33,11 +33,14 @@ export const Hero: React.FC = () => {
 
   return (
     <section id="hero" className="relative pt-24 sm:pt-32 pb-16 sm:pb-24 border-b border-obsidian-border dark:border-obsidian-border border-paper-border structural-grid overflow-hidden">
-      <div className="max-w-[1720px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16 relative">
-        {/* Top Metadata Header with Corner Ticks */}
-        <div className="relative flex flex-wrap items-center justify-between gap-4 pb-5 mb-8 sm:mb-10 border-b border-zinc-800 dark:border-zinc-800 border-zinc-200 font-mono text-xs">
-          <div className="corner-mark corner-mark-tl"></div>
-          <div className="corner-mark corner-mark-tr"></div>
+      <div className="w-full px-4 sm:px-6 lg:px-8 xl:px-10 2xl:px-12 relative">
+        {/* Top Metadata Header with Precision Corner Crosshairs */}
+        <div className="relative border border-zinc-800/80 dark:border-zinc-800/80 border-zinc-200/80 bg-obsidian-subtle/60 dark:bg-obsidian-subtle/60 bg-zinc-50/60 px-4 py-3 mb-8 sm:mb-10 flex flex-wrap items-center justify-between gap-4 font-mono text-xs">
+          {/* Corner Crosshair Markers */}
+          <span className="absolute -top-1.5 -left-1.5 font-mono text-xs text-brand select-none leading-none pointer-events-none">+</span>
+          <span className="absolute -top-1.5 -right-1.5 font-mono text-xs text-brand select-none leading-none pointer-events-none">+</span>
+          <span className="absolute -bottom-1.5 -left-1.5 font-mono text-xs text-brand select-none leading-none pointer-events-none">+</span>
+          <span className="absolute -bottom-1.5 -right-1.5 font-mono text-xs text-brand select-none leading-none pointer-events-none">+</span>
 
           <div className="flex items-center gap-2 text-zinc-400 dark:text-zinc-400 text-zinc-600">
             <span className="text-brand font-bold tracking-wider">SEC.00</span>

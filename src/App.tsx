@@ -81,7 +81,7 @@ export function App() {
       />
 
       {/* Main Structural Frame - Stretched Width for Expansive Architectural Alignment */}
-      <div className="max-w-[1720px] mx-auto border-x border-zinc-800/80 dark:border-zinc-800/80 border-zinc-200/80 relative bg-obsidian/40 dark:bg-obsidian/40 bg-white/40 shadow-2xl">
+      <div className="w-full max-w-[1920px] mx-auto border-x border-zinc-800/80 dark:border-zinc-800/80 border-zinc-200/80 relative bg-obsidian/40 dark:bg-obsidian/40 bg-white/40 shadow-2xl">
         <main>
           <Hero />
           <Projects />
